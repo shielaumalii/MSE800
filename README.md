@@ -25,9 +25,9 @@
 - **Line #5~#7:** Prints the array, it's shape, it's data type, and the result of each data multiplied by 2.
 #### **Task 2.0 Result Explanation:**
 - **Shape: (10,)** means that the shape of the array is one-dimensional with 10 elements.
--** Data Type: (int64)** means that the data type represents a 64-bit integer.
+- **Data Type: (int64)** means that the data type represents a 64-bit integer.
 
-  ### **Task 3.0:** Test Scores
+### **Task 3.0:** Test Scores
 >***Description:***\
 >  _Using a 2D NumPy array representing the test scores of 5 students across 3 subjects, the following tasks shall be performed: calculate and display the average score for each student and each subject, identify the student with the highest total score, and add a 5-point bonus to all students' scores in the third subject._
 #### **Task 3.0 Code Explanation:**
