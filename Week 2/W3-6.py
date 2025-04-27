@@ -3,7 +3,7 @@ number = int(input("Enter a positive integer: "))
 class Factorial:
     def factorial(self, number: int):
         if number < 0:
-            print("Non-negative integer is not allowed.")
+            print("Negative integer is not allowed.")
         else:
             factorial = 1
             for i in range(1, number + 1):
