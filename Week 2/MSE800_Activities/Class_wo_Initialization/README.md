@@ -1,0 +1,3 @@
+# MSE800 Activities - Week 3
+### **Task 3.0:**  Rewrite sample code (from activity w3-6) without using initializer & self (if it is possible)
+***Answer:*** It is possible to use class without initialization by making methods static. By doing this, methods don't require access to instance variables/class variables. Hence, they don't use 'self', but take the number 'num1' as an argument. Static methods are called directly on the class. On this code >> 'Factorial.display(10)'
