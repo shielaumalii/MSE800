@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Load the data
-df = pd.read_csv("MSE800/Week 4/rainfall_data-analysis/data/1924-to-1987_monthly-anually_rainfall.csv")
+df = pd.read_csv("data/1924-to-1987_monthly-anually_rainfall.csv")
 
 # Show basic info
 print(df.info())
