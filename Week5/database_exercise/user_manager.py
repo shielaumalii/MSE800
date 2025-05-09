@@ -71,7 +71,7 @@ def delete_user(user_id):
     cursor.execute("DELETE FROM users WHERE id = ?", (user_id,))
     conn.commit()
     conn.close()
-    print("🗑️ User deleted.")
+    print("User deleted.")
 
 
 def adv_search_user(id, name):
