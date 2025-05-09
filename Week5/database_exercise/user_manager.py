@@ -36,16 +36,10 @@ def delete_user(user_id):
     conn.close()
     print("🗑️ User deleted.")
 
-def adv_search_user(keyword):
+def adv_search_user(id, name):
     conn = create_connection()
     cursor = conn.cursor()
-    query = """
-        SELECT * FROM users
-        WHERE id LIKE ? OR
-              name LIKE ? OR
-              email LIKE ?
-    """
-    cursor.execute(query, ('%' + keyword + '%', '%' + keyword + '%', '%' + keyword + '%'))
+    cursor.execute("SELECT * FROM users WHERE name LIKE ? AND id = ?", ('%' + name + '%', id))
     rows = cursor.fetchall()
     conn.close()
     return rows
