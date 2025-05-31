@@ -2,7 +2,7 @@ import os
 from src.data_processor import DataProcessor
 
 def main():
-    base_path = os.path.join(os.getcwd(), 'data')
+    base_path = os.path.join(os.getcwd(), 'data') # 
 
     # Process CSV file
     csv_path = os.path.join(base_path, 'sample_junk_mail.csv')
