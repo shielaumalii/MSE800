@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload and Display Image</title>
+</head>
+<body>
+    <h1>Upload and Display Image</h1>
+    <form method="POST" enctype="multipart/form-data" action="/">
+        <input type="file" name="file" accept="image/*">
+        <input type="submit" value="Upload">
+    </form>
+    {% if user_image %}
+        <img src="{{ user_image }}">
+    {% endif %}
+</body>
+</html>
